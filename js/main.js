@@ -12,11 +12,13 @@ function getDate(){
             if(data.media_type === 'image'){
                 document.querySelector('img').src = data.hdurl
                 document.querySelector('img').style.border = '5px solid white' 
+                document.querySelector('img').style.boxShadow = '10px 10px 15px black' 
                 document.querySelector('iframe').classList.add('hidden')   
                 document.querySelector('img').classList.remove('hidden')   
             }else if(data.media_type === 'video'){
                 document.querySelector('iframe').src = data.url
                 document.querySelector('iframe').style.border = '5px solid white'
+                document.querySelector('iframe').style.boxShadow = '10px 10px 15px black'
                 document.querySelector('iframe').classList.remove('hidden')
                 document.querySelector('img').classList.add('hidden')
             }
